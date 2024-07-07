@@ -7,10 +7,10 @@ import search from "../images/search.svg";
 const NavBar = () => {
   return (
     <div>
-      <header className="flex items-center justify-between bg-navYellow py-4 px-[4rem]">
-        <h2 className="font-bold text-3xl ">Scentsory</h2>
+      <header className="flex items-center justify-between bg-navYellow py-4 px-[8rem]">
+        <h2 className="font-bold text-3xl font-[Oregano] italic">Scentsory</h2>
         <nav>
-          <ul className="flex items-center gap-3 text-xl font-semibold">
+          <ul className="flex items-center gap-[3rem] text-xl font-semibold">
             <li>Shop</li>
             <li>About us</li>
             <li>Blog</li>
@@ -19,21 +19,21 @@ const NavBar = () => {
         <div className="relative">
           <input
             type="text"
-            className="rounded-md px-12 placeholder-textBlck placeholder-pxl relative"
+            className="rounded-xl px-4 h-8 placeholder-textBlck placeholder-pxl relative bg-navYellow border border-customBorder"
             placeholder="search"
           ></input>
           <img
-            className="absolute z-10 inset-y-0 left-60 top-1 pointer-events-none"
+            className="absolute z-10 inset-y-0 left-[85%] top-2 pointer-events-none"
             src={search}
             alt="search"
           />
         </div>
-        <div className="flex items-center gap-[7rem]">
+        <div className="flex items-center gap-[2rem]">
           <Link to="/profile" className="">
-            <img src={user} alt="user" />
+            <img className="w-5" src={user} alt="user" />
           </Link>
           <Link to="/profile" className="">
-            <img src={bag} alt="user" />
+            <img className="w-5" src={bag} alt="user" />
           </Link>
         </div>
       </header>

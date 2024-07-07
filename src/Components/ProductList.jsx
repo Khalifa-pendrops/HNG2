@@ -1,18 +1,160 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
+import image6 from "../images/image 6.svg";
+import image7 from "../images/image 7.svg";
+import image8 from "../images/image 8.svg";
+import image9 from "../images/image 9.svg";
+import image10 from "../images/image 10.svg";
+import image11 from "../images/image 11.svg";
+import image12 from "../images/image 12.svg";
+import image13 from "../images/image 13.svg";
 import club from "../images/club.svg";
 import star from "../images/star.svg";
 import nostar from "../images/nostar.svg";
+import arrowdown from "../images/arrowdown.svg";
 
 function ProductList() {
   return (
-    <div>
-      <section className="my-[4rem] flex flex-col items-center gap-8">
+    <div className="flex justify-center gap-[4rem] mt-[4rem]">
+      <div className="flex flex-col gap-4">
+        <aside className="flex flex-col gap-4 p-2 ">
+          <div className="flex items-center gap-4">
+            <h6 className="font-semibold">Filters</h6>
+            <p className="text-[.7rem] underline">Clear filters</p>
+          </div>
+          <div className="flex flex-col gap-2 w-fit pr-2 pb-2">
+            <h6 className="">Categories</h6>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Perfume</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Perfume</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Perfume</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Perfume</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Perfume</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Perfume</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Perfume</p>
+            </div>
+          </div>
+        </aside>
+
+        <aside className="flex flex-col gap-4 p-2 ">
+          <div className="flex items-center gap-4">
+            <h6 className="font-semibold">Brands</h6>
+          </div>
+          <div className="flex flex-col gap-2 w-fit pr-2 pb-2">
+            {/* <h6 className="">Categories</h6> */}
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Gucci</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Hugo Boss</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Elizabeth Arden</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Police</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Joop</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Armani</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Burbery</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Dior</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">David off</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Aramis</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Ck</p>
+            </div>
+            <div className="flex gap-1">
+              <input type="checkbox"></input>
+              <p className="text-[.8rem]">Creed Aventus</p>
+            </div>
+          </div>
+        </aside>
+
+        <aside className="flex flex-col gap-4 p-2 ">
+          <div className="flex items-center gap-4">
+            <h6 className="font-semibold">Review Ratings</h6>
+          </div>
+          <div className="flex flex-col gap-4 w-fit pr-2 pb-2">
+            <div className="flex gap-3">
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+            </div>
+            <div className="flex gap-1">
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+              <img src={nostar} alt="empty star" />
+            </div>
+            <div className="flex gap-1">
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+              <img src={star} alt="full star" />
+              <img src={nostar} alt="empty star" />
+              <img src={nostar} alt="empty star" />
+            </div>
+          </div>
+        </aside>
+      </div>
+      <section className="mb-[4rem] flex flex-col items-center gap-8">
+        <div className="border flex items-center gap-2 px-2 self-end">
+          <p className="text-customtxt text-[.7rem] underline">Sort By</p>
+          <h6 className="font-semibold">Popular</h6>
+          <img src={arrowdown} alt="down arrow" />
+        </div>
         <div className="flex flex-col justify-center items-center gap-4 ">
           <div className="flex items-center justify-center gap-[2rem]">
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
+            <div className="flex flex-col justify-center items-center gap-4 border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={club} alt="perfume" />
+              <div className="flex flex-col items-center gap-2">
                 <p>Club de Nuit</p>
+                <p>Club de Nuit Precieux 1</p>
+                <p>Eau de Parfum 100ml</p>
+                <p className="">&#36;87.25</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -23,10 +165,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
-                <p>Club de Nuit</p>
+            <div className="flex flex-col justify-center items-center gap-6 border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={image6} alt="perfume" />
+              <div className="flex flex-col items-center gap-2">
+                <p>Dior Sausage</p>
+                <p>SAUSAGE Elixir x Baccarat</p>
+                <p>Eau de Parfum 100ml</p>
+                <p className="">&#36;99.10</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -37,10 +182,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
-                <p>Club de Nuit</p>
+            <div className="flex flex-col justify-center gap-8 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={image7} alt="perfume" />
+              <div className="flex flex-col items-center gap-2">
+                <p>Creed Aventus</p>
+                <p>4 You Creed Aventus</p>
+                <p>Eau de Parfum 100ml</p>
+                <p className="">&#36;50.45</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -53,10 +201,13 @@ function ProductList() {
           </div>
 
           <div className="flex items-center justify-center gap-[2rem]">
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
-                <p>Club de Nuit</p>
+            <div className="flex flex-col justify-center gap-1  items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={image8} alt="perfume" />
+              <div className="flex flex-col items-center gap-2 text-center">
+                <p>Calvin Klein</p>
+                <p>Calvin Klein Eternity For Men Parfum 100ml</p>
+                <p>Eau de Parfum 100ml</p>
+                <p className="">&#36;87.25</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -67,10 +218,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
-                <p>Club de Nuit</p>
+            <div className="flex flex-col justify-center gap-10 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={image9} alt="perfume" />
+              <div className="flex flex-col items-center gap-2">
+                <p>Gucci</p>
+                <p>Gucci Bamboo Perfume</p>
+                <p>Eau de Parfum 100ml</p>
+                <p className="">&#36;60.55</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -81,10 +235,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
-                <p>Club de Nuit</p>
+            <div className="flex flex-col justify-center gap-4 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={image10} alt="perfume" />
+              <div className="flex flex-col items-center gap-2">
+                <p>Burbery</p>
+                <p>Her Eau de Toilette</p>
+                <p>Extrait de Parfum 100ml</p>
+                <p className="">&#36;45.87</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -97,10 +254,13 @@ function ProductList() {
           </div>
 
           <div className="flex items-center justify-center gap-[2rem]">
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
-                <p>Club de Nuit</p>
+            <div className="flex flex-col justify-center gap-6 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={image11} alt="perfume" />
+              <div className="flex flex-col items-center gap-2 text-center">
+                <p>Aramis</p>
+                <p>ARAMIS DEVIN ARAMIS 100ML EDT FOR MEN</p>
+                <p>Extrai de Parfum 100ml</p>
+                <p className="">&#36;60.55</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -111,10 +271,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
-                <p>Club de Nuit</p>
+            <div className="flex flex-col justify-center gap-4 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={image12} alt="perfume" />
+              <div className="flex flex-col items-center gap-2 text-center">
+                <p>Davidoff</p>
+                <p>Davidoff cool water reborn</p>
+                <p>Extrai de Parfum 100ml</p>
+                <p className="">&#36;70.55</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -125,10 +288,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between items-center border border-navYellow w-[15rem] h-[20rem] py-2 rounded-xl">
-              <div className="flex flex-col items-center">
-                <img src={club} alt="perfume" />
-                <p>Club de Nuit</p>
+            <div className="flex flex-col justify-center gap-2 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
+              <img src={image13} alt="perfume" />
+              <div className="flex flex-col items-center gap-2 text-center">
+                <p>Jaguar</p>
+                <p>Jaguar For Men</p>
+                <p>Eau de Toilette</p>
+                <p className="">&#36;70.55</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -139,8 +305,13 @@ function ProductList() {
               </div>
             </div>
           </div>
-              </div>
-              <button className= "border-none bg-navYellow px-6 py-1 rounded-sm" type="submit">Load more products</button>
+        </div>
+        <button
+          className="border-none bg-navYellow px-6 py-1 rounded-sm"
+          type="submit"
+        >
+          Load more products
+        </button>
       </section>
     </div>
   );

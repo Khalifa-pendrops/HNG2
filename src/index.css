@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+
+
 .placeholder-pxl::placeholder{
-    @apply text-xl
+    @apply text-sm
 }
