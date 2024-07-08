@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div>
       <footer className="flex flex-col items-center">
-        <div className="flex justify-center gap-[12rem] items-center bg-footerbg w-[100%] py-[2rem] border-t border-t-customBorder">
+        <div className="max-sm:hidden flex justify-center gap-[12rem] items-center bg-footerbg w-[100%] py-[2rem] border-t border-t-customBorder">
           <div className="flex flex-col items-center gap-2 ">
             <h2 className="text-3xl font-[Oregano] italic">Scentsory</h2>
             <p className="text-[.8rem] w-[12rem] text-center ">

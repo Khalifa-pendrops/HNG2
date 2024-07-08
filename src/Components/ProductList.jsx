@@ -14,8 +14,8 @@ import arrowdown from "../images/arrowdown.svg";
 
 function ProductList() {
   return (
-    <div className="flex justify-center gap-[4rem] mt-[4rem]">
-      <div className="flex flex-col gap-4">
+    <div className="flex justify-center gap-[4rem] mt-[2rem] font-Outfit">
+      <div className="flex flex-col gap-4 max-sm:hidden">
         <aside className="flex flex-col gap-4 p-2 ">
           <div className="flex items-center gap-4">
             <h6 className="font-semibold">Filters</h6>
@@ -141,20 +141,20 @@ function ProductList() {
         </aside>
       </div>
       <section className="mb-[4rem] flex flex-col items-center gap-8">
-        <div className="border flex items-center gap-2 px-2 self-end">
+        <div className="border flex items-center gap-2 px-2 self-end max-sm:hidden">
           <p className="text-customtxt text-[.7rem] underline">Sort By</p>
           <h6 className="font-semibold">Popular</h6>
           <img src={arrowdown} alt="down arrow" />
         </div>
-        <div className="flex flex-col justify-center items-center gap-4 ">
-          <div className="flex items-center justify-center gap-[2rem]">
-            <div className="flex flex-col justify-center items-center gap-4 border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={club} alt="perfume" />
+        <div className="flex flex-col justify-center items-center gap-4 max-sm:w-[334px]">
+          <div className="flex items-center justify-center gap-[2rem] max-sm:flex-wrap">
+            <div className="flex flex-col justify-center items-center gap-4 border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img src={club} alt="perfume" width="117.48px" height="178px" />
               <div className="flex flex-col items-center gap-2">
-                <p>Club de Nuit</p>
-                <p>Club de Nuit Precieux 1</p>
+                <p className="font-bold">Club de Nuit</p>
+                <p className="font-bold">Club de Nuit Precieux 1</p>
                 <p>Eau de Parfum 100ml</p>
-                <p className="">&#36;87.25</p>
+                <p className="font-bold">&#36;87.25</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -165,13 +165,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center gap-6 border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={image6} alt="perfume" />
+            <div className="flex flex-col justify-center items-center gap-6 border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img src={image6} alt="perfume" width="160px" height="160px" />
               <div className="flex flex-col items-center gap-2">
-                <p>Dior Sausage</p>
-                <p>SAUSAGE Elixir x Baccarat</p>
+                <p className="font-bold">Dior Sausage</p>
+                <p className="font-bold">SAUSAGE Elixir x Baccarat</p>
                 <p>Eau de Parfum 100ml</p>
-                <p className="">&#36;99.10</p>
+                <p className="font-bold">&#36;99.10</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -182,13 +182,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center gap-8 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={image7} alt="perfume" />
+            <div className="flex flex-col justify-center gap-8 items-center border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img src={image7} alt="perfume" width="300px" height="181px" />
               <div className="flex flex-col items-center gap-2">
-                <p>Creed Aventus</p>
-                <p>4 You Creed Aventus</p>
+                <p className="font-bold">Creed Aventus</p>
+                <p className="font-bold">4 You Creed Aventus</p>
                 <p>Eau de Parfum 100ml</p>
-                <p className="">&#36;50.45</p>
+                <p className="font-bold">&#36;50.45</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -200,14 +200,16 @@ function ProductList() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-[2rem]">
-            <div className="flex flex-col justify-center gap-1  items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={image8} alt="perfume" />
+          <div className="flex items-center justify-center gap-[2rem] max-sm:flex-wrap">
+            <div className="flex flex-col justify-center gap-1  items-center border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img src={image8} alt="perfume" width="185px" height="185px" />
               <div className="flex flex-col items-center gap-2 text-center">
-                <p>Calvin Klein</p>
-                <p>Calvin Klein Eternity For Men Parfum 100ml</p>
+                <p className="font-bold">Calvin Klein</p>
+                <p className="font-bold">
+                  Calvin Klein Eternity For Men Parfum 100ml
+                </p>
                 <p>Eau de Parfum 100ml</p>
-                <p className="">&#36;87.25</p>
+                <p className="font-bold">&#36;87.25</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -218,13 +220,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center gap-10 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={image9} alt="perfume" />
+            <div className="flex flex-col justify-center gap-10 items-center border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img src={image9} alt="perfume" width="265.4px" height="152px" />
               <div className="flex flex-col items-center gap-2">
-                <p>Gucci</p>
-                <p>Gucci Bamboo Perfume</p>
+                <p className="font-bold">Gucci</p>
+                <p className="font-bold">Gucci Bamboo Perfume</p>
                 <p>Eau de Parfum 100ml</p>
-                <p className="">&#36;60.55</p>
+                <p className="font-bold">&#36;60.55</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -235,13 +237,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center gap-4 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={image10} alt="perfume" />
+            <div className="flex flex-col justify-center gap-4 items-center border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img src={image10} alt="perfume" width="185px" height="185px" />
               <div className="flex flex-col items-center gap-2">
-                <p>Burbery</p>
-                <p>Her Eau de Toilette</p>
+                <p className="font-bold">Burbery</p>
+                <p className="font-bold">Her Eau de Toilette</p>
                 <p>Extrait de Parfum 100ml</p>
-                <p className="">&#36;45.87</p>
+                <p className="font-bold">&#36;45.87</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -253,14 +255,21 @@ function ProductList() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-[2rem]">
-            <div className="flex flex-col justify-center gap-6 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={image11} alt="perfume" />
+          <div className="flex items-center justify-center gap-[2rem] max-sm:flex-wrap">
+            <div className="flex flex-col justify-center gap-6 items-center border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img
+                src={image11}
+                alt="perfume"
+                width="259.7px"
+                height="146.23px"
+              />
               <div className="flex flex-col items-center gap-2 text-center">
-                <p>Aramis</p>
-                <p>ARAMIS DEVIN ARAMIS 100ML EDT FOR MEN</p>
+                <p className="font-bold">Aramis</p>
+                <p className="font-bold">
+                  ARAMIS DEVIN ARAMIS 100ML EDT FOR MEN
+                </p>
                 <p>Extrai de Parfum 100ml</p>
-                <p className="">&#36;60.55</p>
+                <p className="font-bold">&#36;60.55</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -271,13 +280,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center gap-4 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={image12} alt="perfume" />
+            <div className="flex flex-col justify-center gap-4 items-center border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img src={image12} alt="perfume" width="177px" height="177px" />
               <div className="flex flex-col items-center gap-2 text-center">
-                <p>Davidoff</p>
-                <p>Davidoff cool water reborn</p>
+                <p className="font-bold">Davidoff</p>
+                <p className="font-bold">Davidoff cool water reborn</p>
                 <p>Extrai de Parfum 100ml</p>
-                <p className="">&#36;70.55</p>
+                <p className="font-bold">&#36;70.55</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -288,13 +297,13 @@ function ProductList() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center gap-2 items-center border-2 border-navYellow w-[15rem] h-[24rem] py-2 rounded-xl">
-              <img src={image13} alt="perfume" />
+            <div className="flex flex-col justify-center gap-2 items-center border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
+              <img src={image13} alt="perfume" width="190px" height="190px" />
               <div className="flex flex-col items-center gap-2 text-center">
-                <p>Jaguar</p>
-                <p>Jaguar For Men</p>
+                <p className="font-bold">Jaguar</p>
+                <p className="font-bold">Jaguar For Men</p>
                 <p>Eau de Toilette</p>
-                <p className="">&#36;70.55</p>
+                <p className="font-bold">&#36;70.55</p>
               </div>
               <div className="flex gap-2 items-center">
                 <img src={star} alt="star" />
@@ -306,12 +315,6 @@ function ProductList() {
             </div>
           </div>
         </div>
-        {/* <button
-          className="border-none bg-navYellow px-6 py-1 rounded-sm"
-          type="submit"
-        >
-          Load more products
-        </button> */}
       </section>
     </div>
   );

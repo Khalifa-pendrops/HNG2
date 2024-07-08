@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "max-sm": { max: "640px" },
+      },
       colors: {
         navYellow: "rgba(229, 184, 11, 1)",
         textBlck: "rgba(0, 0, 0, 1)",
@@ -14,6 +17,7 @@ export default {
         customBGLight: "rgba(217, 217, 217, 0.26)",
         horizontalLine: "rgba(144, 144, 144, 1)",
         slider: "rgba(99, 125, 146, 1)",
+        bodyBG: "rgba(106, 106, 106, 1)",
       },
       placeholderSize: {
         pxl: "text-sm",

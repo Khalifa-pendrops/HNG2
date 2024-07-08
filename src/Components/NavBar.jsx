@@ -7,9 +7,9 @@ import search from "../images/search.svg";
 const NavBar = () => {
   return (
     <div>
-      <header className="flex items-center justify-between bg-navYellow py-4 px-[8rem]">
+      <header className="flex items-center justify-between bg-navYellow py-4 px-[8rem] max-sm:w-[100%] max-sm:gap-[6rem] max-sm:px-10">
         <h2 className="font-bold text-3xl font-[Oregano] italic">Scentsory</h2>
-        <nav>
+        <nav className="max-sm:hidden">
           <ul className="flex items-center gap-[3rem] text-xl font-semibold">
             <li>Shop</li>
             <li>About us</li>
@@ -19,7 +19,7 @@ const NavBar = () => {
         <div className="relative">
           <input
             type="text"
-            className="rounded-xl px-4 h-8 placeholder-textBlck placeholder-pxl relative bg-navYellow border border-customBorder"
+            className="max-sm:hidden rounded-xl px-4 h-8 placeholder-textBlck placeholder-pxl relative bg-navYellow border border-customBorder"
             placeholder="search"
           ></input>
           <img
@@ -30,7 +30,7 @@ const NavBar = () => {
         </div>
         <div className="flex items-center gap-[2rem]">
           <Link to="/profile" className="">
-            <img className="w-5" src={user} alt="user" />
+            <img className="w-5 max-sm:hidden" src={user} alt="user" />
           </Link>
           <Link to="/profile" className="">
             <img className="w-5" src={bag} alt="user" />

@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
 
 
 .placeholder-pxl::placeholder{
