@@ -9,10 +9,10 @@ function ShippingPage() {
   return (
     <div>
       <SecondNavBar />
-      <div className="flex justify-center items-center gap-[12rem] my-[4rem]">
-        <div className="flex flex-col gap-[4rem]">
+      <div className="flex justify-center items-center gap-[12rem] my-[4rem] max-sm:flex-col max-sm:gap-4 max-sm:my-5">
+        <div className="flex flex-col gap-[4rem] max-sm:gap-4 max-sm:items-center">
           <h3 className="font-semibold">Checkout</h3>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 max-sm:flex-row">
             <div className=" flex items-center gap-6 border w-[14rem] px-4 py-2">
               <input type="checkbox"></input>
               <div className="flex flex-col gap-1">
@@ -29,7 +29,10 @@ function ShippingPage() {
             </div>
           </div>
           <Link to="/payment">
-            <button className="bg-navYellow py-2 px-8 font-semibold" type="submit">
+            <button
+              className="bg-navYellow py-2 px-8 font-semibold"
+              type="submit"
+            >
               Continue to Payment
             </button>
           </Link>

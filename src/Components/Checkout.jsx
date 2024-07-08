@@ -32,16 +32,16 @@ function Checkout() {
     <div>
       <SecondNavBar />
       <div className="flex justify-center items-center gap-[8rem] my-[4rem] max-sm:flex-col max-sm:my-[2rem] max-sm:w-[600px]">
-        <div className="flex flex-col gap-4 max-sm:justify-center">
-          <div className="max-sm:px-6">
+        <div className="flex flex-col gap-4 max-sm:justify-center max-sm:items-center">
+          <div className=" max-sm:flex max-sm:flex-col max-sm:items-center">
             <h3 className="font-semibold text-2xl">Checkout</h3>
             <p>Shipping Information</p>
           </div>
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-2  max-sm:px-6 max-sm:justify-center"
+            className="flex flex-col gap-2 max-sm:justify-center max-sm:border-2 max-sm:p-6 max-sm:ml-10"
           >
-            <div className="flex gap-2 max-sm:flex-wrap">
+            <div className="flex gap-2 max-sm:flex-wrap max-sm:justify-between max-sm:items-center">
               <input
                 type="text"
                 name="firstname"

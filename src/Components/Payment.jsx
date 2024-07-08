@@ -34,7 +34,7 @@ function Payment() {
     <div>
       <SecondNavBar />
       <div className="flex justify-center items-center gap-[4rem] my-[4rem] max-sm:flex-col">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-sm:py-4 max-sm:w-[80%]">
           <h3 className="font-semibold text-2xl">Checkout</h3>
           <div className="flex  items-center gap-4">
             <img src={paypal2} alt="paypal" />
@@ -69,7 +69,7 @@ function Payment() {
               placeholder="Address"
               className="border pl-2 py-2 placeholder-pxl"
             ></input>
-            <div className="flex gap-2">
+            <div className="flex gap-2 max-sm:flex-wrap">
               <input
                 type="text"
                 name="country"
@@ -108,7 +108,7 @@ function Payment() {
             </button>
           </form>
         </div>
-        <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6 max-sm:hidden">
+        <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6 max-sm:w-[80%]">
           <p>Your cart</p>
           <div className="flex gap-[2rem]">
             <div className="border p-2 border-navYellow w-fit">

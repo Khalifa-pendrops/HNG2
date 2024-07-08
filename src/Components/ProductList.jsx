@@ -150,9 +150,7 @@ function ProductList() {
         <div className="flex flex-col justify-center items-center gap-4 max-sm:w-[334px]">
           <div className="flex items-center justify-center gap-[2rem] max-sm:flex-wrap">
             <div className="flex flex-col justify-center items-center gap-4 border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
-              <Link to="/productInfo">
-                <img src={club} alt="perfume" width="117.48px" height="178px" />
-              </Link>
+              <img src={club} alt="perfume" width="117.48px" height="178px" />
               <div className="flex flex-col items-center gap-2">
                 <p className="font-bold">Club de Nuit</p>
                 <p className="font-bold">Club de Nuit Precieux 1</p>
@@ -169,7 +167,9 @@ function ProductList() {
             </div>
 
             <div className="flex flex-col justify-center items-center gap-6 border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
-              <img src={image6} alt="perfume" width="160px" height="160px" />
+              <Link to="/productInfo">
+                <img src={image6} alt="perfume" width="160px" height="160px" />
+              </Link>
               <div className="flex flex-col items-center gap-2">
                 <p className="font-bold">Dior Sausage</p>
                 <p className="font-bold">SAUSAGE Elixir x Baccarat</p>

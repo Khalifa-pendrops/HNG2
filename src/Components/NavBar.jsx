@@ -8,7 +8,13 @@ const NavBar = () => {
   return (
     <div>
       <header className="flex items-center justify-between bg-navYellow py-4 px-[8rem] max-sm:w-[100%] max-sm:justify-center max-sm:gap-[6rem] max-sm:border-2">
-        <h2 className="font-bold text-3xl font-[Oregano] italic max-sm: text-[24px]">Scentsory</h2>
+        {/* <div className="hidden max-sm:flex max-sm:items-center max-sm:justify-between  max-sm:w-[100%]">
+          <h2 className="text-xl font-semibold font-[Oregano] italic">Scentsory</h2>
+          <img src={bag}></img>
+        </div> */}
+        <h2 className="font-bold text-3xl font-[Oregano] italic max-sm:text-[24px]">
+          Scentsory
+        </h2>
         <nav className="max-sm:hidden">
           <ul className="flex items-center gap-[3rem] text-xl font-semibold">
             <li>Shop</li>
@@ -16,7 +22,7 @@ const NavBar = () => {
             <li>Blog</li>
           </ul>
         </nav>
-        <div className="relative">
+        <div className="relative max-sm:hidden">
           <input
             type="text"
             className="max-sm:hidden rounded-xl px-4 h-8 placeholder-textBlck placeholder-pxl relative bg-navYellow border border-customBorder"
@@ -28,7 +34,7 @@ const NavBar = () => {
             alt="search"
           />
         </div>
-        <div className="flex items-center gap-[2rem]">
+        <div className="flex items-center gap-[2rem] max-sm:hidden">
           <Link to="/profile" className="">
             <img className="w-5 max-sm:hidden" src={user} alt="user" />
           </Link>

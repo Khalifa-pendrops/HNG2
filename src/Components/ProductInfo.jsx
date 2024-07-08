@@ -12,10 +12,10 @@ function ProductInfo() {
     <div>
       <div>
         <NavBar />
-        <div className="flex justify-center items-center my-[4rem] gap-[4rem]">
-          <div className="flex flex-col gap-[4rem]">
+        <div className="flex justify-center items-center my-[4rem] gap-[4rem] max-sm:flex-col">
+          <div className="flex flex-col gap-[4rem] max-sm:items-center">
             <h3 className="text-2xl">Product details</h3>
-            <img src={image6}></img>
+            <img src={image6} alt="perfume"></img>
             <div className="flex items-center justify-center gap-4 ">
               <div className="border p-2 border-navYellow">
                 <img src={image6} alt="perfume" width="100px" />
@@ -63,16 +63,16 @@ function ProductInfo() {
             </div>
 
             {/* <div className="buttons flex items-center gap-6"> */}
-              {/* <Link to="/cart">
+            {/* <Link to="/cart">
                 <button className="border py-2 px-6 bg-black text-white cursor-pointer">
                   Add to Cart
                 </button>
               </Link> */}
-              <Link to="/summary">
-                <button className="py-2 px-6 cursor-pointer bg-navYellow w-[100%] font-semibold">
-                  Add to Cart
-                </button>
-              </Link>
+            <Link to="/summary">
+              <button className="py-2 px-6 cursor-pointer bg-navYellow w-[100%] font-semibold">
+                Add to Cart
+              </button>
+            </Link>
             {/* </div> */}
             <div className="checkDown flex justify-between w-[100%] text-sm">
               <p>Free standard shipping</p>

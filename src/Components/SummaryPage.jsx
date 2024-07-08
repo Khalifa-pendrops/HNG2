@@ -12,16 +12,14 @@ function SummaryPage() {
       <div>
         <div className="flex justify-center items-center gap-[4rem] my-[4rem] max-sm:flex-col max-sm:gap-[.2rem] max-sm:my-[1rem]">
           <div className="flex flex-col gap-[8rem] max-sm:justify-center max-sm:items-center">
-            <div className="flex flex-col justify-between gap-4 max-sm:w-[90%] max-sm:gap-6">
-              <div className=" flex flex-col gap-4 max-sm:justify-center max-sm:items-center">
-                <h3 className="text-2xl max-sm:self-start max-sm:ml-[5.5rem]">
-                  Your cart
-                </h3>
-                <div className="hidden max-sm:flex max-sm:justify-between max-sm:border-b max-sm:pb-4 max-sm:border-gray-600 max-sm:w-[70%]">
+            <div className="flex flex-col justify-between gap-4 max-sm:items-center max-sm:w-[90%] max-sm:gap-6">
+              <div className=" flex flex-col gap-4 max-sm:justify-center ">
+                <h3 className="text-2xl ">Your cart</h3>
+                {/* <div className="hidden max-sm:flex max-sm:justify-between max-sm:border-b max-sm:pb-4 max-sm:border-gray-600 max-sm:w-[70%]">
                   <p>PRODUCT</p>
                   <p>TOTAL</p>
-                </div>
-                <p className="flex gap-1 max-sm:hidden">
+                </div> */}
+                <p className="flex gap-1">
                   Not ready to checkout?
                   <Link to="/shop">
                     <span className="text-blue-400 cursor-pointer">
@@ -30,9 +28,9 @@ function SummaryPage() {
                   </Link>
                 </p>
               </div>
-              <div className="flex gap-[14.5rem] border-b-2 border-horizontalLine pb-8 max-sm:border-none max-sm:w-[70%] max-sm:ml-[6rem]">
-                <div className="flex gap-[4rem] max-sm:gap-[4rem] max-sm:w-[80%] max-sm:justify-between">
-                  <div className="border p-2 border-navYellow w-fit max-sm:w-[80px] max-sm:height-[80px] max-sm:border-none">
+              <div className="flex gap-[14.5rem] border-b-2  border-horizontalLine pb-8 max-sm:w-[70%] max-sm:border-none">
+                <div className="flex gap-[4rem]">
+                  <div className="border p-2 border-navYellow w-fit max-sm:w-[100px] max-sm:height-[100px] max-sm:border-none">
                     <img
                       className="max-sm:w-[80px]"
                       src={image6}
@@ -41,23 +39,12 @@ function SummaryPage() {
                     />
                   </div>
                   <div className="flex flex-col gap-2 ">
-                    <h5 className="font-semibold">Dior Sausage</h5>
+                    <h5 className="font-semibold text-nowrap">Dior Sausage</h5>
                     <p className="text-[.7rem]">Quantity: 1</p>
-                    <h5 className="font-semibold max-sm:hidden">&#36;99.10</h5>
-                    <div className="hidden max-sm:flex max-sm:items-center max-sm:gap-[4rem] max-sm:w-[100%]">
-                      {" "}
-                      <div className="hidden max-sm:flex max-sm:items-center max-sm:gap-4 max-sm:w-[100%] max-sm:justify-between">
-                        <div className="hidden max-sm:flex max-sm:items-center max-sm:gap-2 max-sm:rounded-full max-sm:py-1 max-sm:px-4 max-sm:border">
-                          <p className="font-bold">-</p>
-                          <p>1</p>
-                          <p className="font-bold">+</p>
-                        </div>
-                        <img src={union} alt="delete" />
-                      </div>
-                      <p className="hidden max-sm:flex max-sm:font-bold">
-                        &#36;99.10
-                      </p>
-                    </div>
+                    <h5 className="font-semibold">&#36;99.10</h5>
+                    <p className="max-sm:flex max-sm:underline max-sm:cursor-pointer hidden">
+                      Remove
+                    </p>
                   </div>
                 </div>
                 <div className="flex flex-col self-end items-end gap-1 my-[4rem]">
@@ -90,9 +77,9 @@ function SummaryPage() {
             </div>
           </div>
 
-          <div className="bg-customBGLight p-[3rem] flex flex-col gap-10 w-[20rem] max-sm:bg-white max-sm:w-[80%] max-sm:py-[0]">
+          <div className="bg-customBGLight p-[3rem] flex flex-col gap-10 w-[20rem] max-sm:bg-white max-sm:w-[80%] max-sm:py-[0] max-sm:justify-center max-sm:items-center">
             <h6 className="font-semibold max-sm:hidden">Order Summary</h6>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 max-sm:w-[100%]">
               <input
                 className="bg-customBGLight pl-2 py-2 border border-black placeholder-pxl"
                 type="text"
@@ -105,7 +92,7 @@ function SummaryPage() {
                 Apply Promo code
               </button>
             </div>
-            <div className=" flex flex-col gap-4">
+            <div className=" flex flex-col gap-4 max-sm:w-[100%]">
               <div className="flex justify-between items-center">
                 <p className="text-[.6rem]">Subtotal</p>
                 <p className="font-semibold">&#36;99.10</p>
@@ -120,8 +107,11 @@ function SummaryPage() {
                 <p className="font-semibold">&#36;99.10</p>
               </div>
             </div>
-            <Link to="/checkout">
-              <button className="bg-navYellow py-2 px-8 font-semibold" type="submit">
+          <Link to="/checkout">
+              <button
+                className="bg-navYellow py-2 px-8 font-semibold"
+                type="submit"
+              >
                 Continue to checkout
               </button>
             </Link>
