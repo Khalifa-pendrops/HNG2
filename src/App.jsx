@@ -19,11 +19,11 @@ const App = () => {
       <Header />
       <ProductList />
       <Footer />
-      <ProductInfo />
+      {/* <ProductInfo /> */}
       <SummaryPage />
-      <ShippingPage />
-      <Checkout />
-      <Payment />
+      {/* <ShippingPage /> */}
+      {/* <Checkout /> */}
+      {/* <Payment /> */}
       <Outlet />
     </div>
   );
