@@ -13,6 +13,7 @@ export default {
         customeBG: "rgba(217, 217, 217, 0.42)",
         customBGLight: "rgba(217, 217, 217, 0.26)",
         horizontalLine: "rgba(144, 144, 144, 1)",
+        slider: "rgba(99, 125, 146, 1)",
       },
       placeholderSize: {
         pxl: "text-sm",

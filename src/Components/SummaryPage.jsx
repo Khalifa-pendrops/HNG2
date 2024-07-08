@@ -10,7 +10,7 @@ function SummaryPage() {
       <NavBar />
       <div>
         <div className="flex justify-center items-center gap-[4rem] my-[4rem]">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-[8rem]">
             <div className="flex flex-col justify-between gap-4">
               <div className=" flex flex-col gap-2">
                 <h3 className="text-2xl">Your cart</h3>
@@ -40,26 +40,24 @@ function SummaryPage() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-              <h5 className="font-semibold border-b border-horizontalLine pb-4">
-                Order Information
-              </h5>
-              <div className=" flex justify-between text-horizontalLine">
+            <div className="flex flex-col gap-2 border-2 border-dashed p-4">
+              <div className=" flex justify-between text-horizontalLine border-b border-horizontalLine pb-4">
                 <h6>Return Policy</h6>
                 <Link to="/policy">
-                  <p className="font-semibold">-</p>
-                </Link>
-              </div>
-              <p className="text-horizontalLine">
-                This is our return policy which is everything you need to know
-                about our returns.
-              </p>
-              <hr className="border-1 border-horizontalLine"></hr>
-              <div className=" flex justify-between text-horizontalLine border-b border-horizontalLine pb-4">
-                <h6>Shipping Options</h6>
-                <Link to="/shippingOptions">
                   <p className="font-semibold">+</p>
                 </Link>
+              </div>
+              <div className="flex flex-col text-horizontalLine border-b border-horizontalLine pb-4">
+                <div className=" flex justify-between pb-4">
+                  <h6>Return Policy</h6>
+                  <Link to="/policy">
+                    <p className="font-semibold">-</p>
+                  </Link>
+                </div>
+                <p className="text-horizontalLine">
+                  You have 30 days from the date of delivery to return your
+                  item.
+                </p>
               </div>
             </div>
           </div>

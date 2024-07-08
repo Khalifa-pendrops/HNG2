@@ -306,12 +306,12 @@ function ProductList() {
             </div>
           </div>
         </div>
-        <button
+        {/* <button
           className="border-none bg-navYellow px-6 py-1 rounded-sm"
           type="submit"
         >
           Load more products
-        </button>
+        </button> */}
       </section>
     </div>
   );

@@ -7,17 +7,23 @@ import Footer from "./Components/Footer";
 import ProductInfo from "./Components/ProductInfo";
 import SummaryPage from "./Components/SummaryPage";
 import ShippingPage from "./Components/ShippingPage";
+import SecondNavBar from "./Components/SecondNavBar";
+import Checkout from "./Components/Checkout";
+import Payment from "./Components/Payment";
 
 const App = () => {
   return (
     <div className="App">
       <NavBar />
+      {/* <SecondNavBar /> */}
       <Header />
       <ProductList />
       <Footer />
-      {/* <ProductInfo /> */}
-      {/* <SummaryPage /> */}
+      <ProductInfo />
+      <SummaryPage />
       <ShippingPage />
+      <Checkout />
+      <Payment />
       <Outlet />
     </div>
   );

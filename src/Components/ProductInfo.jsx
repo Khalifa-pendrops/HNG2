@@ -29,7 +29,7 @@ function ProductInfo() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-6 border p-[3rem] bg-customeBG ">
+          <div className="flex flex-col items-center gap-6 p-[3rem] bg-customeBG  ">
             <div className="flex items-center justify-between w-[100%]">
               <h3 className="font-semibold text-xl">Dior Sausage</h3>
               <div className="flex  gap-3 items-center">
@@ -54,7 +54,7 @@ function ProductInfo() {
 
               <div className="flex flex-col self-end items-end gap-1 my-[4rem]">
                 <p>Quantity</p>
-                <div className="flex items-center border justify-center gap-4 px-2 border-navYellow">
+                <div className="flex items-center border rounded-sm justify-center gap-4 px-2 border-navYellow">
                   <p className="font-semibold">-</p>
                   <p>2</p>
                   <p className="font-semibold">+</p>
@@ -62,18 +62,18 @@ function ProductInfo() {
               </div>
             </div>
 
-            <div className="buttons flex items-center gap-6">
-              <Link to="/cart">
+            {/* <div className="buttons flex items-center gap-6"> */}
+              {/* <Link to="/cart">
                 <button className="border py-2 px-6 bg-black text-white cursor-pointer">
                   Add to Cart
                 </button>
-              </Link>
+              </Link> */}
               <Link to="/shop">
-                <button className="border py-2 px-6 cursor-pointer bg-navYellow">
-                  Shop Now
+                <button className="py-2 px-6 cursor-pointer bg-navYellow w-[100%] font-semibold">
+                  Add to Cart
                 </button>
               </Link>
-            </div>
+            {/* </div> */}
             <div className="checkDown flex justify-between w-[100%] text-sm">
               <p>Free standard shipping</p>
               <p className="underline cursor-pointer">Free Returns</p>

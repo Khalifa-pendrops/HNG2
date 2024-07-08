@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import image6 from "../images/image 6.svg";
+import SecondNavBar from "./SecondNavBar";
 
 function ShippingPage() {
   return (
     <div>
-      <NavBar />
+      <SecondNavBar />
       <div className="flex justify-center items-center gap-[12rem] my-[4rem]">
         <div className="flex flex-col gap-[4rem]">
           <h3 className="font-semibold">Checkout</h3>
@@ -27,7 +28,7 @@ function ShippingPage() {
               </div>
             </div>
           </div>
-          <button className="bg-navYellow py-4 font-semibold" type="submit">Continue to Payment</button>
+          <button className="bg-navYellow py-2  font-semibold" type="submit">Continue to Payment</button>
         </div>
 
         <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6">
