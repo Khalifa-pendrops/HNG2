@@ -6,6 +6,7 @@ import ProductList from "./Components/ProductList";
 import Footer from "./Components/Footer";
 import ProductInfo from "./Components/ProductInfo";
 import SummaryPage from "./Components/SummaryPage";
+import ShippingPage from "./Components/ShippingPage";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
       <ProductList />
       <Footer />
       {/* <ProductInfo /> */}
-      <SummaryPage />
+      {/* <SummaryPage /> */}
+      <ShippingPage />
       <Outlet />
     </div>
   );

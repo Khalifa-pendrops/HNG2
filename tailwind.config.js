@@ -12,6 +12,7 @@ export default {
         customBorder: "rgba(104, 104, 104, 1)",
         customeBG: "rgba(217, 217, 217, 0.42)",
         customBGLight: "rgba(217, 217, 217, 0.26)",
+        horizontalLine: "rgba(144, 144, 144, 1)",
       },
       placeholderSize: {
         pxl: "text-sm",
