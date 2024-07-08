@@ -33,7 +33,7 @@ function Payment() {
   return (
     <div>
       <SecondNavBar />
-      <div className="flex justify-center items-center gap-[4rem] my-[4rem]">
+      <div className="flex justify-center items-center gap-[4rem] my-[4rem] max-sm:flex-col">
         <div className="flex flex-col gap-4">
           <h3 className="font-semibold text-2xl">Checkout</h3>
           <div className="flex  items-center gap-4">
@@ -108,7 +108,7 @@ function Payment() {
             </button>
           </form>
         </div>
-        <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6">
+        <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6 max-sm:hidden">
           <p>Your cart</p>
           <div className="flex gap-[2rem]">
             <div className="border p-2 border-navYellow w-fit">

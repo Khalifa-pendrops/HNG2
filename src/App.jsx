@@ -22,8 +22,8 @@ const App = () => {
       {/* <ProductInfo /> */}
       {/* <SummaryPage /> */}
       {/* <ShippingPage /> */}
-      <Checkout />
-      {/* <Payment /> */}
+      {/* <Checkout /> */}
+      <Payment />
       <Outlet />
     </div>
   );
