@@ -29,18 +29,17 @@ function Checkout() {
   };
 
   return (
-    <div>
+    <div className="hidden max-sm:flex max-sm:flex-col max-sm:justify-center">
       <SecondNavBar />
-      <div className="flex justify-center items-center gap-[8rem] my-[4rem] max-sm:flex-col max-sm:my-[2rem]">
-        <div className="flex flex-col gap-4 max-sm:justify-center  max-sm:w-[508px]">
-          <div className="max-sm:px-6">
-            {" "}
+      <div className="flex justify-center items-center gap-[8rem] my-[4rem] max-sm:flex-col max-sm:my-[2rem] max-sm:w-[600px]">
+        <div className="flex flex-col gap-4 max-sm:justify-center  max-sm:items-center">
+          <div className="max-sm:px-6 max-sm:self-start max-sm:ml-[5rem]">
             <h3 className="font-semibold text-2xl">Checkout</h3>
             <p>Shipping Information</p>
           </div>
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-2  max-sm:px-6"
+            className="flex flex-col gap-2  max-sm:px-6 max-sm:justify-center max-sm:items-center"
           >
             <div className="flex gap-2 max-sm:flex-wrap">
               <input
@@ -66,7 +65,7 @@ function Checkout() {
               value={FormData.address}
               onChange={handleChange}
               placeholder="Address"
-              className="border pl-2 py-2 placeholder-pxl "
+              className="border pl-2 py-2 placeholder-pxl max-sm:w-[24.3rem]"
             ></input>
             <input
               type="text"
@@ -74,7 +73,7 @@ function Checkout() {
               value={FormData.apartment}
               onChange={handleChange}
               placeholder="Apartment, suite, etc (optional)"
-              className="border pl-2 py-2 placeholder-pxl"
+              className="border pl-2 py-2 placeholder-pxl max-sm:w-[24.3rem]"
             ></input>
             <input
               type="text"
@@ -82,9 +81,9 @@ function Checkout() {
               value={FormData.city}
               onChange={handleChange}
               placeholder="City"
-              className="border pl-2 py-2 placeholder-pxl"
+              className="border pl-2 py-2 placeholder-pxl max-sm:w-[24.3rem]"
             ></input>
-            <div className="flex gap-2 max-sm:flex-wrap">
+            <div className="flex gap-2 max-sm:justify-center max-sm:items-center max-sm:flex-wrap">
               <input
                 type="text"
                 name="country"
@@ -110,12 +109,12 @@ function Checkout() {
                 className="border pl-2 py-2 placeholder-pxl"
               ></input>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 max-sm:justify-center max-sm:items-center max-sm:self-start max-sm:ml-[5rem]">
               <input type="checkbox"></input>
               <p>Save contact information</p>
             </div>
             <button
-              className="bg-navYellow py-2  font-semibold flex items-center justify-center"
+              className="bg-navYellow py-2  font-semibold flex items-center justify-center max-sm:w-[24.3rem]"
               type="submit"
             >
               Continue to Shipping
