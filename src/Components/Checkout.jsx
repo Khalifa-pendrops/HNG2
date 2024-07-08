@@ -113,12 +113,14 @@ function Checkout() {
               <input type="checkbox"></input>
               <p>Save contact information</p>
             </div>
-            <button
-              className="bg-navYellow py-2  font-semibold flex items-center justify-center"
-              type="submit"
-            >
-              Continue to Shipping
-            </button>
+            <Link to="/shipping">
+              <button
+                className="bg-navYellow py-2 px-8 font-semibold flex items-center justify-center"
+                type="submit"
+              >
+                Continue to Shipping
+              </button>
+            </Link>
           </form>
         </div>
 

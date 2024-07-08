@@ -120,7 +120,9 @@ function Payment() {
               <h5 className="font-semibold">&#36;99.10</h5>
             </div>
             <div className="flex flex-col self-end items-end ml-8 mb-5 ">
-              <p className="underline cursor-pointer">Remove</p>
+              <Link to="/home">
+                <p className="underline cursor-pointer">Remove</p>
+              </Link>
             </div>
           </div>
         </div>

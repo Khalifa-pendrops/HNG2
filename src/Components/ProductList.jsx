@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import image6 from "../images/image 6.svg";
 import image7 from "../images/image 7.svg";
 import image8 from "../images/image 8.svg";
@@ -149,7 +150,9 @@ function ProductList() {
         <div className="flex flex-col justify-center items-center gap-4 max-sm:w-[334px]">
           <div className="flex items-center justify-center gap-[2rem] max-sm:flex-wrap">
             <div className="flex flex-col justify-center items-center gap-4 border-2 border-navYellow h-[472px] w-[300.75px] py-2 rounded-xl">
-              <img src={club} alt="perfume" width="117.48px" height="178px" />
+              <Link to="/productInfo">
+                <img src={club} alt="perfume" width="117.48px" height="178px" />
+              </Link>
               <div className="flex flex-col items-center gap-2">
                 <p className="font-bold">Club de Nuit</p>
                 <p className="font-bold">Club de Nuit Precieux 1</p>

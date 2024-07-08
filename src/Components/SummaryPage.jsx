@@ -120,9 +120,11 @@ function SummaryPage() {
                 <p className="font-semibold">&#36;99.10</p>
               </div>
             </div>
-            <button className="bg-navYellow py-2 font-semibold" type="submit">
-              Continue to checkout
-            </button>
+            <Link to="/checkout">
+              <button className="bg-navYellow py-2 px-8 font-semibold" type="submit">
+                Continue to checkout
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -28,7 +28,11 @@ function ShippingPage() {
               </div>
             </div>
           </div>
-          <button className="bg-navYellow py-2  font-semibold" type="submit">Continue to Payment</button>
+          <Link to="/payment">
+            <button className="bg-navYellow py-2 px-8 font-semibold" type="submit">
+              Continue to Payment
+            </button>
+          </Link>
         </div>
 
         <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6">
