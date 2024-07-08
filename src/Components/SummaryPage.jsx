@@ -12,10 +12,12 @@ function SummaryPage() {
       <div>
         <div className="flex justify-center items-center gap-[4rem] my-[4rem] max-sm:flex-col max-sm:gap-[.2rem] max-sm:my-[1rem]">
           <div className="flex flex-col gap-[8rem] max-sm:justify-center max-sm:items-center">
-            <div className="flex flex-col justify-between gap-4 max-sm:w-[90%]">
-              <div className=" flex flex-col gap-4">
-                <h3 className="text-2xl">Your cart</h3>
-                <div className="hidden max-sm:flex max-sm:justify-between max-sm:border-b max-sm:pb-4 max-sm:border-gray-600">
+            <div className="flex flex-col justify-between gap-4 max-sm:w-[90%] max-sm:gap-6">
+              <div className=" flex flex-col gap-4 max-sm:justify-center max-sm:items-center">
+                <h3 className="text-2xl max-sm:self-start max-sm:ml-[5.5rem]">
+                  Your cart
+                </h3>
+                <div className="hidden max-sm:flex max-sm:justify-between max-sm:border-b max-sm:pb-4 max-sm:border-gray-600 max-sm:w-[70%]">
                   <p>PRODUCT</p>
                   <p>TOTAL</p>
                 </div>
@@ -28,8 +30,8 @@ function SummaryPage() {
                   </Link>
                 </p>
               </div>
-              <div className="flex gap-[14.5rem] border-b-2 border-horizontalLine pb-8 max-sm:border-none">
-                <div className="flex gap-[4rem] max-sm:gap-[4rem] max-sm:w-[100%] max-sm:justify-between">
+              <div className="flex gap-[14.5rem] border-b-2 border-horizontalLine pb-8 max-sm:border-none max-sm:w-[70%] max-sm:ml-[6rem]">
+                <div className="flex gap-[4rem] max-sm:gap-[4rem] max-sm:w-[80%] max-sm:justify-between">
                   <div className="border p-2 border-navYellow w-fit max-sm:w-[80px] max-sm:height-[80px] max-sm:border-none">
                     <img
                       className="max-sm:w-[80px]"
@@ -88,7 +90,7 @@ function SummaryPage() {
             </div>
           </div>
 
-          <div className="bg-customBGLight p-[3rem] flex flex-col gap-10 w-[20rem] max-sm:bg-white max-sm:w-[100%] max-sm:py-[0]">
+          <div className="bg-customBGLight p-[3rem] flex flex-col gap-10 w-[20rem] max-sm:bg-white max-sm:w-[80%] max-sm:py-[0]">
             <h6 className="font-semibold max-sm:hidden">Order Summary</h6>
             <div className="flex flex-col gap-6">
               <input

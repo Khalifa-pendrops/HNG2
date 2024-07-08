@@ -7,7 +7,7 @@ import search from "../images/search.svg";
 const NavBar = () => {
   return (
     <div>
-      <header className="flex items-center justify-between bg-navYellow py-4 px-[8rem] max-sm:w-[100%] max-sm:justify-center max-sm:gap-[6rem] max-sm:border-2 max-sm:border-blue-600">
+      <header className="flex items-center justify-between bg-navYellow py-4 px-[8rem] max-sm:w-[100%] max-sm:justify-center max-sm:gap-[6rem] max-sm:border-2">
         <h2 className="font-bold text-3xl font-[Oregano] italic max-sm: text-[24px]">Scentsory</h2>
         <nav className="max-sm:hidden">
           <ul className="flex items-center gap-[3rem] text-xl font-semibold">
