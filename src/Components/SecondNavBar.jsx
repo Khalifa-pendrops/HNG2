@@ -9,14 +9,14 @@ const SecondNavBar = () => {
     <div>
       <header className="flex items-center justify-between bg-navYellow py-4 px-[8rem]">
         <h2 className="font-bold text-3xl font-[Oregano] italic">Scentsory</h2>
-        <div className="relative flex gap-8">
+        <div className="relative flex gap-8 max-sm:gap-[0rem]">
           <input
             type="text"
-            className="rounded-xl px-4 h-8 placeholder-textBlck placeholder-pxl relative bg-navYellow border border-customBorder"
+            className=" max-sm:hidden rounded-xl px-4 h-8 placeholder-textBlck placeholder-pxl relative bg-navYellow border border-customBorder"
             placeholder="search"
           ></input>
           <img
-            className="absolute z-10 inset-y-0 left-[70%] top-2 pointer-events-none"
+            className="max-sm:hidden absolute z-10 inset-y-0 left-[70%] top-2 pointer-events-none"
             src={search}
             alt="search"
           />

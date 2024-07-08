@@ -20,9 +20,9 @@ const App = () => {
       <ProductList />
       <Footer />
       {/* <ProductInfo /> */}
-      <SummaryPage />
+      {/* <SummaryPage /> */}
       {/* <ShippingPage /> */}
-      {/* <Checkout /> */}
+      <Checkout />
       {/* <Payment /> */}
       <Outlet />
     </div>

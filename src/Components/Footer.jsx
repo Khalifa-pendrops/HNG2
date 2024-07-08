@@ -76,7 +76,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="bg-black text-white w-[100%] flex items-center justify-center p-4 text-[.8rem] ">
+        <div className="bg-black text-white w-[100%] flex items-center justify-center p-4 text-[.8rem]">
           Copyright &copy;2024 Scentsory. All right reserved.
         </div>
       </footer>

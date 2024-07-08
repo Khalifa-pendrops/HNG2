@@ -31,8 +31,8 @@ function Checkout() {
   return (
     <div>
       <SecondNavBar />
-      <div className="flex justify-center items-center gap-[8rem] my-[4rem]">
-        <div className="flex flex-col gap-4">
+      <div className="flex justify-center items-center gap-[8rem] my-[4rem] max-sm:flex-col">
+        <div className="flex flex-col gap-4 max-sm:justify-center max-sm:border-4">
           <h3 className="font-semibold text-2xl">Checkout</h3>
           <p>Shipping Information</p>
           <form onSubmit={handleSubmit} className="flex flex-col gap-2">
@@ -117,7 +117,7 @@ function Checkout() {
           </form>
         </div>
 
-        <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6">
+        <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6 max-sm:hidden">
           <p>Your cart</p>
           <div className="flex gap-[2rem]">
             <div className="border p-2 border-navYellow w-fit">
