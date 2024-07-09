@@ -8,7 +8,7 @@ import search from "../images/search.svg";
 const NavBar = () => {
   return (
     <div>
-      <header className="bg-navYellow flex justify-between items-center px-[8rem] py-4  max-sm:px-0 max-sm:justify-center max-sm:gap-[14rem] max-sm:py-0">
+      <header className="bg-navYellow flex justify-between items-center px-[8rem] py-4  max-sm:px-2 max-sm:justify-center max-sm:gap-[14rem] max-sm:py-0">
         <div className="flex items-center gap-12">
           <h2 className="font-[Oregano] font-normal italic text-[40px] max-sm:text-[24px]">
             Scentsory

@@ -8,9 +8,11 @@ function Footer() {
   return (
     <div>
       <footer className="flex flex-col items-center max-sm:justify-center ">
-        <div className=" flex justify-center gap-[12rem] items-center bg-footerbg w-[100%] py-[2rem] border-t border-t-customBorder     max-sm:flex-col max-sm:gap-4 max-sm:self-center">
-          <div className="flex flex-col items-center gap-2 ">
-            <h2 className="text-3xl font-[Oregano] italic">Scentsory</h2>
+        <div className=" flex justify-center gap-[12rem] items-center bg-footerbg w-[100%] py-[2rem] border-t border-t-customBorder     max-sm:flex-col max-sm:gap-8 max-sm:self-center max-sm:flex-col-reverse">
+          <div className="flex flex-col items-center gap-2      max-sm:">
+            <h2 className="text-3xl font-[Oregano] italic     max-sm:text-[32px]">
+              Scentsory
+            </h2>
             <p className="text-[.8rem] w-[12rem] text-center ">
               Where every scent is a memory waiting to happen.
             </p>
