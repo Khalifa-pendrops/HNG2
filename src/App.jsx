@@ -22,8 +22,8 @@ const App = () => {
       <ProductList />
       <Footer /> */}
       <Outlet />
-      <ProductInfo />
-      <SummaryPage />
+      {/* <ProductInfo />
+      <SummaryPage /> */}
       
     </div>
   );
