@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oregano:ital@1&family=Outfit:wght@100..900&display=swap');
+
+
 
 
 
 
 .placeholder-pxl::placeholder{
     @apply text-sm
+}
+
+body{
+    height: 100vh;
 }
