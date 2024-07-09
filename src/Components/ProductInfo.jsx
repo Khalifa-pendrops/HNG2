@@ -6,82 +6,85 @@ import image12 from "../images/image 12.svg";
 import heart from "../images/heart.svg";
 import boxarrow from "../images/boxarrow.svg";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 function ProductInfo() {
   return (
     <div>
-      <div>
-        <NavBar />
-        <div className="flex justify-center items-center my-[4rem] gap-[4rem] max-sm:flex-col">
-          <div className="flex flex-col gap-[4rem] max-sm:items-center">
-            <h3 className="text-2xl">Product details</h3>
-            <img src={image6} alt="perfume"></img>
-            <div className="flex items-center justify-center gap-4 ">
-              <div className="border p-2 border-navYellow">
-                <img src={image6} alt="perfume" width="100px" />
-              </div>
-              <div className="border p-2 border-customtxt">
-                <img src={image12} alt="perfume" width="100px" />
-              </div>
-              <div className="border p-2 border-customtxt">
-                <img src={image12} alt="perfume" width="100px" />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center gap-6 p-[3rem] bg-customeBG  ">
-            <div className="flex items-center justify-between w-[100%]">
-              <h3 className="font-semibold text-xl">Dior Sausage</h3>
-              <div className="flex  gap-3 items-center">
-                <img className="cursor-pointer" src={heart} alt="heart" />
-                <img className="cursor-pointer" src={boxarrow} alt="save" />
-              </div>
-            </div>
-
-            <div className="flex">
-              <div className="flex">
-                <img src={image6} alt="perfume" />
-                <div className="flex flex-col gap-14">
-                  <p
-                    className="text-[.8rem]
-                  w-[10rem]"
-                  >
-                    Fragrance: Dior Sauvage Type: Eau de Toilette
-                  </p>
-                  <p className="text-[.8rem]">&#36;99.10</p>
-                </div>
-              </div>
-
-              <div className="flex flex-col self-end items-end gap-1 my-[4rem]">
-                <p>Quantity</p>
-                <div className="flex items-center border rounded-sm justify-center gap-4 px-2 border-navYellow">
-                  <p className="font-semibold">-</p>
-                  <p>2</p>
-                  <p className="font-semibold">+</p>
-                </div>
-              </div>
-            </div>
-
-            {/* <div className="buttons flex items-center gap-6"> */}
-            {/* <Link to="/cart">
-                <button className="border py-2 px-6 bg-black text-white cursor-pointer">
-                  Add to Cart
-                </button>
-              </Link> */}
-            <Link to="/summary">
-              <button className="py-2 px-6 cursor-pointer bg-navYellow w-[100%] font-semibold">
-                Add to Cart
-              </button>
-            </Link>
-            {/* </div> */}
-            <div className="checkDown flex justify-between w-[100%] text-sm">
-              <p>Free standard shipping</p>
-              <p className="underline cursor-pointer">Free Returns</p>
+      <NavBar />
+      <Header />
+      <div className="flex my-[2rem] justify-around        max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:gap-6">
+        <div className="left flex flex-col gap-4 px-4      max-sm:items-center">
+          <h1 className="text-[2rem] font-bold">Product details</h1>
+          <div className="images flex flex-col gap-6">
+            <img className="w-[429px]" src={image6} alt="perfume" />
+            <div className="jointimages flex gap-4       max-sm:hidden">
+              <img
+                className="w-[160px] border border-navYellow"
+                src={image6}
+                alt="perfume"
+              />
+              <img
+                className="w-[160px] border border-gray-500"
+                src={image6}
+                alt="perfume"
+              />
+              <img
+                className="w-[160px] border border-gray-500"
+                src={image6}
+                alt="perfume"
+              />
             </div>
           </div>
         </div>
-        <Footer />
+        <div className="right bg-custBG p-8 flex flex-col gap-8 h-fit">
+          <div className="top flex flex-col gap-6">
+            <div className="flex justify-between">
+              <h1 className="font-bold text-xl">Dior Sausage</h1>
+              <div className="flex items-center gap-2">
+                <img
+                  className="cursor-pointer w-[24px]"
+                  src={heart}
+                  alt="favorite"
+                />
+                <img
+                  className="cursor-pointer w-[24px]"
+                  src={boxarrow}
+                  alt="save"
+                />
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <img className="w-[151px]" src={image6} alt="perfume" />
+              <div className="flex flex-col gap-4">
+                <p className="text-[18px] w-[14rem]">
+                  Fragrance: Dior Sauvage Type: Eau de Toilette
+                </p>
+                <p className="text-[18px] font-bold">&#36;99.10</p>
+              </div>
+              <div className="flex flex-col gap-2">
+                <p className="text-[18px]">Quantity</p>
+                <div className="flex text-[18px] font-bold items-center justify-center gap-2 border-2 cursor-pointer border-navYellow">
+                  <p>-</p>
+                  <p>1</p>
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            className="bg-navYellow text-[20px] font-bold text-black w-[100%]"
+            type="submit"
+          >
+            Add to Cart
+          </button>
+          <div className="down flex justify-between">
+            <p className="text-[14px]">Free standard shipping</p>
+            <p className="underline text-[14px] cursor-pointer">Free Returns</p>
+          </div>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

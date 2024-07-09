@@ -17,10 +17,10 @@ import Payment from "./Components/Payment.jsx";
 const App = () => {
   return (
     <div className="App">
-      {/* <NavBar />
+      <NavBar />
       <Header />
       <ProductList />
-      <Footer /> */}
+      <Footer />
       <Outlet />
       {/* <ProductInfo />
       <SummaryPage /> */}

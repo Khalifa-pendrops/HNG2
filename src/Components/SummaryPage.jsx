@@ -4,11 +4,14 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import image6 from "../images/image 6.svg";
 import union from "../images/Union.svg";
+import SecondNavBar from "./SecondNavBar";
+import Header from "./Header";
 
 function SummaryPage() {
   return (
     <div>
       <NavBar />
+      <Header />
       <div className="flex justify-around items-center my-[2rem] font-[Outfit]      max-sm:flex-col max-sm:gap-[2rem]">
         <div className="left flex flex-col gap-[4rem]">
           <div className="top px-2 flex flex-col gap-4      max-sm:gap-1-0">
@@ -46,12 +49,12 @@ function SummaryPage() {
                         <h6 className="font-semibold text-[22px]      max-sm:hidden">
                           &#36;99.10
                         </h6>
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
+                        <p className="hidden      max-sm:flex">-</p>
+                        <p className="hidden     max-sm:flex">1</p>
+                        <p className="hidden     max-sm:flex">+</p>
                       </div>
                       <img
-                        className="cursor-pointer"
+                        className="max-sm:flex max-sm:cursor-pointer       hidden"
                         src={union}
                         alt="delete"
                       ></img>

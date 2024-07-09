@@ -18,6 +18,7 @@ export default {
         horizontalLine: "rgba(144, 144, 144, 1)",
         slider: "rgba(99, 125, 146, 1)",
         bodyBG: "rgba(106, 106, 106, 1)",
+        custBG: "rgba(165, 161, 161, 0.3)",
       },
       placeholderSize: {
         pxl: "text-sm",
