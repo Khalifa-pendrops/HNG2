@@ -35,13 +35,13 @@ function Checkout() {
       <NavBar />
       <Header />
       <div className="flex justify-around my-[2rem]      max-sm:flex-col">
-        <div className="left flex flex-col justify-center gap-4        max-sm:px-[4rem] max-sm:mx-[1rem]">
+        <div className="left flex flex-col justify-center gap-4        max-sm:px-[1.8rem] max-sm:mx-[1rem]">
           <div className="top flex flex-col">
             <h1 className="text-[34px] font-bold      max-sm:text-[24px]">
               Checkout
             </h1>
-            <p className="hidden  max-sm:flex  max-sm:text-[16px]">
-              Address ---------- Shipping ----------- Payment
+            <p className="hidden  max-sm:flex  max-sm:text-[14px]">
+              Address ==> Shipping ==> Payment
             </p>
             <p className="text-[20px]     max-sm:text-[16px]">
               Shipping Information
@@ -132,7 +132,7 @@ function Checkout() {
             {" "}
             <button
               type="submit"
-              className="bg-navYellow py-1 text-[20px] font-bold    max-sm:text-[14px]"
+              className="bg-navYellow py-2 px-8 text-[24px] font-bold    max-sm:text-[16px]"
             >
               Continue to Shipping
             </button>

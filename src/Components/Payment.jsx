@@ -33,14 +33,14 @@ function Payment() {
   return (
     <div>
       <SecondNavBar />
-      <div className="flex justify-center items-center gap-[4rem] my-[4rem] max-sm:flex-col">
+      <div className="flex justify-center items-center gap-[4rem] my-[4rem] max-sm:flex-col max-sm:my-[2rem]">
         <div className="flex flex-col gap-4 max-sm:py-4 max-sm:w-[80%]">
           <h3 className="font-semibold text-2xl">Checkout</h3>
-          <div className="flex  items-center gap-4">
-            <img src={paypal2} alt="paypal" />
+          <div className="flex  items-center gap-4 w-fit    max-sm:flex-wrap">
+            <img className="max-sm:w-[90px]" src={paypal2} alt="paypal" width=""/>
             <img src={visa} alt="visa" width="80px" />
             <img src={mastercard} alt="mastercard" width="60px" />
-            <img src={apple} alt="apple pay" />
+            <img className="max-sm:w-[50px]" src={apple} alt="apple pay" />
           </div>
           <p>Payment Details</p>
           <form onSubmit={handleSubmit} className="flex flex-col gap-2">
@@ -101,7 +101,7 @@ function Payment() {
               <span className="w-11 h-6 left-[92%] bg-slider rounded-full absolute peer peer-focus: ring-0 peer-focus:ring-blue-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600 "></span>
             </label>
             <button
-              className="bg-navYellow py-2  font-semibold flex items-center justify-center"
+              className="bg-navYellow py-2 px-8 text-[24px] font-semibold flex items-center justify-center    max-sm:text-[16px]"
               type="submit"
             >
               Pay with card
@@ -111,13 +111,13 @@ function Payment() {
         <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6 max-sm:w-[80%]">
           <p>Your cart</p>
           <div className="flex gap-[2rem]">
-            <div className="border p-2 border-navYellow w-fit">
-              <img src={image6} alt="perfume" width="100px" />
+            <div className="border p-2 border-navYellow    max-sm:w-[98px]">
+              <img className=" max-sm:w-[100%]" src={image6} alt="perfume" width="100px" />
             </div>
-            <div className="flex flex-col gap-1">
-              <h5 className="font-semibold">Dior Sausage</h5>
+            <div className="flex flex-col gap-2">
+              <h5 className="font-semibold text-[16px] text-nowrap">Dior Sausage</h5>
               <p className="text-[.7rem]">Quantity: 1</p>
-              <h5 className="font-semibold">&#36;99.10</h5>
+              <h5 className="font-semibold text-[14px]">&#36;99.10</h5>
             </div>
             <div className="flex flex-col self-end items-end ml-8 mb-5 ">
               <Link to="/home">

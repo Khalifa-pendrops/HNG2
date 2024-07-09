@@ -59,17 +59,17 @@ function ProductInfo() {
                 />
               </div>
             </div>
-            <div className="flex gap-4      max-sm:items-center max-sm:gap-0">
+            <div className="flex gap-4      max-sm:items-center max-sm:gap-[.2rem]">
               <img
                 className="w-[151px]     max-sm:w-[123px]"
                 src={image6}
                 alt="perfume"
               />
               <div className="flex flex-col gap-4">
-                <p className="text-[18px] w-[14rem]     max-sm:text-[12px] max-sm:w-[9rem]">
+                <p className="text-[18px] w-[14rem]     max-sm:text-[10px] max-sm:w-[8rem]">
                   Fragrance: Dior Sauvage Type: Eau de Toilette
                 </p>
-                <p className="text-[18px] font-bold">&#36;99.10</p>
+                <p className="text-[18px] font-bold   max-sm:text-[12px]">&#36;99.10</p>
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-[18px]     max-sm:text-[12px]">Quantity</p>
@@ -84,7 +84,7 @@ function ProductInfo() {
           <Link to="/summary">
             {" "}
             <button
-              className="bg-navYellow text-[20px] font-bold text-black w-[100%]      max-sm:text-[14px] max-sm:py-1"
+              className="bg-navYellow text-[24px] px-8 py-2 font-bold text-black w-[100%]      max-sm:text-[16px] max-sm:py-2"
               type="submit"
             >
               Add to Cart
