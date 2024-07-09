@@ -39,7 +39,7 @@ function SummaryPage() {
                       Quantity: 1
                     </p>
                   </div>
-                  <div className="bottom flex gap-[8rem]     max-sm:gap-[6rem]">
+                  <div className="bottom flex gap-[8rem]     max-sm:gap-[4rem]">
                     <div className="max-sm:flex max-sm:gap-2">
                       {" "}
                       <div className="max-sm:flex max-sm:border max-sm:px-4 max-sm:gap-2 max-sm:items-center max-sm:font-semibold max-sm:border-navYellow">
