@@ -40,7 +40,8 @@ function ProductInfo() {
           </div>
         </div>
         <div className="right bg-custBG p-8 flex flex-col gap-8 h-fit">
-          <div className="top flex flex-col gap-6">
+          {/* ALIGNMENT NEEDED  in line 44 div!!! */}
+          <div className="top flex flex-col gap-6    max-sm:justify-center ">
             <div className="flex justify-between">
               <h1 className="font-bold text-xl        max-sm:text-[15px]">
                 Dior Sausage
