@@ -33,14 +33,19 @@ function Payment() {
   return (
     <div>
       <SecondNavBar />
-      <div className="flex justify-center items-center gap-[4rem] my-[4rem] max-sm:flex-col max-sm:my-[2rem]">
+      <div className="flex justify-center font-[Outfit]  items-center gap-[4rem] my-[4rem] max-sm:flex-col max-sm:my-[2rem]">
         <div className="flex flex-col gap-4 max-sm:py-4 max-sm:w-[80%]">
           <h3 className="font-semibold text-2xl">Checkout</h3>
           <div className="flex  items-center gap-4 w-fit    max-sm:flex-wrap">
-            <img className="max-sm:w-[90px]" src={paypal2} alt="paypal" width=""/>
+            <img
+              className="max-sm:w-[100px]"
+              src={paypal2}
+              alt="paypal"
+              width=""
+            />
             <img src={visa} alt="visa" width="80px" />
             <img src={mastercard} alt="mastercard" width="60px" />
-            <img className="max-sm:w-[50px]" src={apple} alt="apple pay" />
+            <img className="max-sm:w-[60px]" src={apple} alt="apple pay" />
           </div>
           <p>Payment Details</p>
           <form onSubmit={handleSubmit} className="flex flex-col gap-2">
@@ -108,14 +113,20 @@ function Payment() {
             </button>
           </form>
         </div>
-        <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6 max-sm:w-[80%]">
+        <div className="bg-customBGLight w-[25rem] py-2 px-6 flex flex-col gap-6 max-sm:w-[100%]">
           <p>Your cart</p>
           <div className="flex gap-[2rem]">
-            <div className="border p-2 border-navYellow    max-sm:w-[98px]">
-              <img className=" max-sm:w-[100%]" src={image6} alt="perfume" width="100px" />
-            </div>
+            {/* <div className="border p-2 border-navYellow    max-sm:w-[120px]"> */}
+            <img
+              className="border-2 w-[104px] max-sm:w-[50%]"
+              src={image6}
+              alt="perfume"
+            />
+            {/* </div> */}
             <div className="flex flex-col gap-2">
-              <h5 className="font-semibold text-[16px] text-nowrap">Dior Sausage</h5>
+              <h5 className="font-semibold text-[16px] text-nowrap">
+                Dior Sausage
+              </h5>
               <p className="text-[.7rem]">Quantity: 1</p>
               <h5 className="font-semibold text-[14px]">&#36;99.10</h5>
             </div>

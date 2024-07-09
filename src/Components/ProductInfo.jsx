@@ -13,7 +13,7 @@ function ProductInfo() {
     <div>
       <NavBar />
       <Header />
-      <div className="flex my-[2rem] justify-around        max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:gap-6">
+      <div className="flex my-[2rem] justify-around font-[Outfit]        max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:gap-6">
         <div className="left flex flex-col gap-4 px-4      max-sm:items-center">
           <h1 className="text-[2rem] font-bold       max-sm:text-[1.6rem]">
             Product details
@@ -69,7 +69,9 @@ function ProductInfo() {
                 <p className="text-[18px] w-[14rem]     max-sm:text-[10px] max-sm:w-[8rem]">
                   Fragrance: Dior Sauvage Type: Eau de Toilette
                 </p>
-                <p className="text-[18px] font-bold   max-sm:text-[12px]">&#36;99.10</p>
+                <p className="text-[18px] font-bold   max-sm:text-[12px]">
+                  &#36;99.10
+                </p>
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-[18px]     max-sm:text-[12px]">Quantity</p>

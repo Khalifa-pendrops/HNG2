@@ -22,7 +22,7 @@ function SummaryPage() {
                 Continue Shopping
               </span>
             </p>
-            <div className="hidden max-sm:Producttotal max-sm:flex max-sm:items-center max-sm:gap-[14rem] max-sm:border     ">
+            <div className="hidden  max-sm:flex max-sm:items-center max-sm:gap-[14rem] max-sm:border-b max-sm:w-fit    ">
               <h6 className="max-sm:text-[12px]">PRODUCT</h6>
               <h6 className="max-sm:text-[12px]">TOTAL</h6>
             </div>
@@ -87,7 +87,7 @@ function SummaryPage() {
             </div>
           </div>
         </div>
-        <div className="right flex flex-col bg-customeBG justify-center p-6 gap-8     max-sm:px-[4rem]">
+        <div className="right flex flex-col bg-customeBG justify-center p-6 gap-8     max-sm:px-[4rem] ">
           <h3 className="font-semibold text-[22px]     max-sm:hidden">
             Order Summary
           </h3>
@@ -121,11 +121,12 @@ function SummaryPage() {
           </div>
           <Link to="/checkout">
             <button
-            className="px-8 py-2 font-bold text-[24px] bg-navYellow     max-sm:text-[16px]"
-            type="submit"
-          >
-            Continue to checkout
-          </button></Link>
+              className="px-8 py-2 font-bold text-[24px] bg-navYellow     max-sm:text-[16px] max-sm:w-[100%]"
+              type="submit"
+            >
+              Continue to checkout
+            </button>
+          </Link>
         </div>
       </div>
       <Footer />

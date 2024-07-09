@@ -35,7 +35,7 @@ function Checkout() {
       <NavBar />
       <Header />
       <div className="flex justify-around my-[2rem]      max-sm:flex-col">
-        <div className="left flex flex-col justify-center gap-4        max-sm:px-[1.8rem] max-sm:mx-[1rem]">
+        <div className="left flex flex-col justify-center gap-4 font-[Outfit]        max-sm:px-[1.8rem] max-sm:mx-[1rem]">
           <div className="top flex flex-col">
             <h1 className="text-[34px] font-bold      max-sm:text-[24px]">
               Checkout

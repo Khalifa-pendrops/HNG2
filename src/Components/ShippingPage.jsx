@@ -11,7 +11,7 @@ function ShippingPage() {
     <div>
       <NavBar />
       <Header />
-      <div className="flex justify-around items-center my-[4rem]     max-sm:flex-col max-sm:my-[2rem] max-sm:gap-[2rem]">
+      <div className="flex justify-around items-center my-[4rem] font-[Outfit]      max-sm:flex-col max-sm:my-[2rem] max-sm:gap-[2rem]">
         <div className="left flex flex-col gap-8     max-sm:gap-6 max-sm:items-center">
           <h1 className="text-[36px] font-semibold      max-sm:text-[24px]">
             Checkout

@@ -15,7 +15,7 @@ import arrowdown from "../images/arrowdown.svg";
 
 function ProductList() {
   return (
-    <div className="flex justify-center gap-[4rem] mt-[2rem] font-Outfit">
+    <div className="flex justify-center gap-[4rem] mt-[2rem] font-[Outfit]">
       <div className="flex flex-col gap-4 max-sm:hidden">
         <aside className="flex flex-col gap-4 p-2 ">
           <div className="flex items-center gap-4">

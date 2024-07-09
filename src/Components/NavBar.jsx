@@ -8,7 +8,7 @@ import search from "../images/search.svg";
 const NavBar = () => {
   return (
     <div>
-      <header className="bg-navYellow flex justify-between items-center px-[8rem] py-4  max-sm:px-2 max-sm:justify-center max-sm:gap-[14rem] max-sm:py-0">
+      <header className="bg-navYellow flex justify-between font-[Outfit]  items-center px-[8rem] py-4  max-sm:px-2 max-sm:justify-center max-sm:gap-[14rem] max-sm:py-0">
         <div className="flex items-center gap-12">
           <Link to="/home">
             {" "}
@@ -44,7 +44,7 @@ const NavBar = () => {
             />
           </label>
           <img className="max-sm:hidden" src={user} alt="user" />
-          <img className="max-sm:w-[16px]" src={bag} alt="bag" />
+          <img className="max-sm:w-[18px] " src={bag} alt="bag" />
         </div>
       </header>
     </div>
