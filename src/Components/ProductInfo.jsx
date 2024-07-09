@@ -81,12 +81,15 @@ function ProductInfo() {
               </div>
             </div>
           </div>
-          <button
-            className="bg-navYellow text-[20px] font-bold text-black w-[100%]      max-sm:text-[14px] max-sm:py-1"
-            type="submit"
-          >
-            Add to Cart
-          </button>
+          <Link to="/summary">
+            {" "}
+            <button
+              className="bg-navYellow text-[20px] font-bold text-black w-[100%]      max-sm:text-[14px] max-sm:py-1"
+              type="submit"
+            >
+              Add to Cart
+            </button>
+          </Link>
           <div className="down flex justify-between">
             <p className="text-[14px]      max-sm:text-[12px]">
               Free standard shipping

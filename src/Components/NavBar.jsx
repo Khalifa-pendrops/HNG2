@@ -10,9 +10,12 @@ const NavBar = () => {
     <div>
       <header className="bg-navYellow flex justify-between items-center px-[8rem] py-4  max-sm:px-2 max-sm:justify-center max-sm:gap-[14rem] max-sm:py-0">
         <div className="flex items-center gap-12">
-          <h2 className="font-[Oregano] font-normal italic text-[40px] max-sm:text-[24px]">
-            Scentsory
-          </h2>
+          <Link to="/home">
+            {" "}
+            <h2 className="font-[Oregano] font-normal italic text-[40px] max-sm:text-[24px]">
+              Scentsory
+            </h2>
+          </Link>
           <nav className="max-sm:hidden">
             <ul className="flex text-[24px] gap-12">
               <Link>

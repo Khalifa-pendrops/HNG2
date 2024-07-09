@@ -22,9 +22,6 @@ const App = () => {
       <ProductList />
       <Footer />
       <Outlet />
-      {/* <ProductInfo />
-      <SummaryPage /> */}
-      
     </div>
   );
 };
