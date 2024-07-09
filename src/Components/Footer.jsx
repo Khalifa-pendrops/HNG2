@@ -7,18 +7,18 @@ import paypal from "../images/paypal.svg";
 function Footer() {
   return (
     <div>
-      <footer className="flex flex-col items-center">
-        <div className="max-sm:hidden flex justify-center gap-[12rem] items-center bg-footerbg w-[100%] py-[2rem] border-t border-t-customBorder">
+      <footer className="flex flex-col items-center max-sm:justify-center ">
+        <div className=" flex justify-center gap-[12rem] items-center bg-footerbg w-[100%] py-[2rem] border-t border-t-customBorder     max-sm:flex-col max-sm:gap-4 max-sm:self-center">
           <div className="flex flex-col items-center gap-2 ">
             <h2 className="text-3xl font-[Oregano] italic">Scentsory</h2>
             <p className="text-[.8rem] w-[12rem] text-center ">
               Where every scent is a memory waiting to happen.
             </p>
           </div>
-          <div className="flex gap-[4rem]">
-            <div className="flex flex-col gap-2">
+          <div className="flex gap-[4rem]      max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:gap-4">
+            <div className="flex flex-col gap-2    max-sm:items-center max-sm:justify-center">
               <h5 className="text-footerTxt">SHOP</h5>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1      max-sm:items-center">
                 <Link to="collections">
                   <p className="text-[.8rem]">All Connections</p>
                 </Link>
@@ -31,9 +31,9 @@ function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2    max-sm:justify-center max-sm:items-center">
               <h5 className="text-footerTxt">COMPANY</h5>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1 max-sm:items-center">
                 <Link to="collections">
                   <p className="text-[.8rem]">About Us</p>
                 </Link>
@@ -46,9 +46,9 @@ function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2      max-sm:justify-center max-sm:items-center">
               <h5 className="text-footerTxt">SUPPORT</h5>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1 max-sm:items-center">
                 <Link to="collections">
                   <p className="text-[.8rem]">FAQs</p>
                 </Link>
@@ -60,7 +60,7 @@ function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 max-sm:items-center">
               <h5 className="text-footerTxt">PAYMENT METHODS</h5>
               <div className="flex items-center justify-center gap-4">
                 <Link to="mastercard">
