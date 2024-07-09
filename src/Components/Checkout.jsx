@@ -141,7 +141,7 @@ function Checkout() {
         <div className="right bg-custBG flex flex-col justify-center px-[2rem] gap-6 py-2      max-sm:hidden">
           <h1 className="text-[20px]">Your cart</h1>
           <div className="flex items-center gap-6">
-            <div className="w-[130px] border border-red-500 py-4">
+            <div className="w-[130px] border border-navYellow py-4">
               <img className="w-[118px]" src={image6} alt="perfume" />
             </div>
             <div className="flex flex-col gap-2">

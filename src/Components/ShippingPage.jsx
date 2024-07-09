@@ -58,7 +58,7 @@ function ShippingPage() {
         <div className="right bg-custBG flex flex-col justify-center px-[2rem] gap-6 py-4 ">
           <h1 className="text-[20px]       max-sm:text-[14px]">Your cart</h1>
           <div className="flex items-center gap-6">
-            <div className="w-[130px] border border-red-500 py-4    max-sm:w-[109px]">
+            <div className="w-[130px] border border-navYellow py-4    max-sm:w-[109px]">
               <img
                 className="w-[118px]    max-sm:w-[96px]"
                 src={image6}

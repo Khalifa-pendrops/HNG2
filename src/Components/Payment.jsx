@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import SecondNavBar from "./SecondNavBar";
+import NavBar from "./NavBar";
 import Footer from "./Footer";
 import image6 from "../images/image 6.svg";
 import visa from "../images/visa.svg";
@@ -32,7 +32,7 @@ function Payment() {
 
   return (
     <div>
-      <SecondNavBar />
+      <NavBar />
       <div className="flex justify-center font-[Outfit]  items-center gap-[4rem] my-[4rem] max-sm:flex-col max-sm:my-[2rem]">
         <div className="flex flex-col gap-4 max-sm:py-4 max-sm:w-[80%]">
           <h3 className="font-semibold text-2xl">Checkout</h3>
@@ -118,7 +118,7 @@ function Payment() {
           <div className="flex gap-[2rem]">
             {/* <div className="border p-2 border-navYellow    max-sm:w-[120px]"> */}
             <img
-              className="border-2 w-[104px] max-sm:w-[50%]"
+              className="border border-navYellow w-[104px] max-sm:w-[50%]"
               src={image6}
               alt="perfume"
             />
