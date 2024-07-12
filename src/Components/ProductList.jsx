@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import image6 from "../images/image 6.svg";
 import image7 from "../images/image 7.svg";
@@ -14,8 +15,52 @@ import nostar from "../images/nostar.svg";
 import arrowdown from "../images/arrowdown.svg";
 
 function ProductList() {
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchProductDetails = async () => {
+      try {
+        const response = await axios.get(
+          "https://docs.timbu.cloud/api/products/get-products",
+          {
+            headers: {
+              Authorization:
+                "Bearer 7cfd9476bf8a4b48927688fa1e64aba120240712150826469958",
+            },
+          }
+        );
+
+        console.log("API Response:", response.data);
+        setProduct(response.data);
+        setLoading(false);
+      } catch (error) {
+        setError(error);
+        setLoading(false);
+      }
+    };
+    fetchProductDetails();
+  }, []);
+
+  if (loading) return <p>Loading in progress...hold</p>;
+  if (error) return <p>Error loading details of product: {error.message}</p>;
+
+
+
+
+
+
   return (
     <div className="flex justify-center gap-[4rem] mt-[2rem] font-[Outfit]">
+      <a>{product.image}</a>
+      <h1>{product.name}</h1>
+      <p>{product.description}</p>
+      <p>Price: ${product.price}</p>
+
+
+
+
       <div className="flex flex-col gap-4 max-sm:hidden">
         <aside className="flex flex-col gap-4 p-2 ">
           <div className="flex items-center gap-4">
